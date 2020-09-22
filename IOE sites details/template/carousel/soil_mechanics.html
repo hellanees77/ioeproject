@@ -1,0 +1,1352 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Jekyll v4.1.1">
+      <title>About Us | Engineering Notes</title>
+        
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+        <!-- Bootstrap core CSS -->
+      <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+       
+        <style>
+          .navbar-nav li:hover > ul.dropdown-menu {
+            display: block;
+          }
+          .dropdown-submenu {
+              position:relative;
+          }
+          .dropdown-submenu>.dropdown-menu {
+              top: 0;
+              left: 100%;
+              margin-top:-6px;
+          }
+          /* rotate caret on hover */
+          .dropdown-menu > li > a:hover:after {
+              text-decoration: underline;
+              transform: rotate(-90deg);
+          } 
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+          @media (min-width: 768px) {
+              .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+              }
+          }
+        </style>
+        <!-- Custom styles for this template -->
+        <link href="carousel.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand pb-2" href="index.html">IOE NOTES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Syllabus </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">BE Computer</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">First Semester</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="engineering_mathematics_1.html">Mathematics I  [SH401]</a></li>
+                                        <li><a class="dropdown-item" href="#">Computer Programming [CT401]</a></li>
+                                        <li><a class="dropdown-item" href="#">Engineering Drawing I [ME401]</a></li>
+                                        <li><a class="dropdown-item" href="#">Engineering Physics [SH452]</a></li>
+                                        <li><a class="dropdown-item" href="#">Applied Mechanics [CE451]</a></li>
+                                        <li><a class="dropdown-item" href="#">Basic Electrical Engineering [EE451]</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second Semester</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Mathematics II [SH451]</a></li>
+                                        <li><a class="dropdown-item" href="#">Engineering Drawing II [ME451]</a></li>
+                                        <li><a class="dropdown-item" href="#">Basic Electronics Engineering  [EX451]</a></li>
+                                        <li><a class="dropdown-item" href="#">Engineering Chemistry [SH403]</a></li>
+                                        <li><a class="dropdown-item" href="#">Fundamental of Thermodynamics  & Heat Transfer [ME402]</a></li>
+                                        <li><a class="dropdown-item" href="#">Workshop Technology</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Third Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics III  [SH501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Object Oriented Programming [CT 501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical Circuit Theory [EE 501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Theory of Computation [CT 502]</a></li>
+                                    <li><a class="dropdown-item" href="#">Electronics Devices and Circuit [EX 501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Logic [EX 502]</a></li>
+                                    <li><a class="dropdown-item" href="#">Electromagnetism [EX 503]</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fourth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Electrical Machine [EE 554]</a></li>
+                                    <li><a class="dropdown-item" href="#">Numerical Method [SH 553]</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Mathematics [SH 551]</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrumentation I [EE 552]</a></li>
+                                    <li><a class="dropdown-item" href="#">Data Structure and Algorithm [CT 552]</a></li>
+                                    <li><a class="dropdown-item" href="#">Microprocessor [EX 551]</a></li>
+                                    <li><a class="dropdown-item" href="#">Discrete Structure [CT 551]</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fifth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Communication English [EG604SH]</a></li>
+                                    <li><a class="dropdown-item" href="#">Probability and Statistics</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer organization and Architecture (COA)</a></li>
+                                    <li><a class="dropdown-item" href="#">Software Engineering</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer Graphic (Access Reference Note)</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrumentation II (Access Complete Notes)</a></li>
+                                    <li><a class="dropdown-item" href="#">Data Communation (Access Important Questions)</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Six Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Engineering Economics [CE 655]</a></li>
+                                    <li><a class="dropdown-item" href="#">Object Oriented Analysis and Design [CT 651]</a></li>
+                                    <li><a class="dropdown-item" href="#">Artificial Intelligence [CT 653]</a></li>
+                                    <li><a class="dropdown-item" href="#">Operating System [CT656]</a></li>
+                                    <li><a class="dropdown-item" href="#">Embedded System [CT 655]</a></li>
+                                    <li><a class="dropdown-item" href="#">Database Management System [CT 652]</a></li>
+                                    <li><a class="dropdown-item" href="#">Minor Project</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Seventh Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">ICT Project Management</a></li>
+                                    <li><a class="dropdown-item" href="#">Organization and Management [ME 708]</a></li>
+                                    <li><a class="dropdown-item" href="#">Energy Environment and Society</a></li>
+                                    <li><a class="dropdown-item" href="#">Distributed System</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer Networks and Security</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Signal Analysis and Processing</a></li>
+                                    <li><a class="dropdown-item" href="#">Elective I</a></li>
+                                    <li><a class="dropdown-item" href="#">Project I</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Eighth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Engineering Professional Practice</a></li>
+                                    <li><a class="dropdown-item" href="#">Information System</a></li>
+                                    <li><a class="dropdown-item" href="#">Internet and Intranet</a></li>
+                                    <li><a class="dropdown-item" href="#">Simulation and Modeling</a></li>
+                                    <li><a class="dropdown-item" href="#">Elective II</a></li>
+                                    <li><a class="dropdown-item" href="#">Elective III</a></li>
+                                    <li><a class="dropdown-item" href="#">Project II</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">BE Civil</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">First Semester</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Engineering Mathematics I  [SH401]</a></li>
+                                        <li><a class="dropdown-item" href="#">Engineering Drawing1 [ME401]</a></li>
+                                        <li><a class="dropdown-item" href="#">Engineering Chemistry [SH403]</a></li>
+                                        <li><a class="dropdown-item" href="#">Fundamental of Thermodynamics & Heat Transfer [ME402]</a></li>
+                                        <li><a class="dropdown-item" href="#">Computer Programming [CT401]</a></li>
+                                        <li><a class="dropdown-item" href="#">Workshop Technology</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second Semester</a>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Applied Mechanics [CE451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Mathematics II [SH451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Physics [SH452]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electronics Engineering [EX451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing II [ME451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electrical Engineering [EE451]</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Third Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Civil Engineering Materials[CE506]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Mathematics III [SH501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Mechanics(Dynamics) [CE503]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Geology I [CE503]</a></li>
+                                    <li><a class="dropdown-item" href="#">Strength of Materials [CE 502]</a></li>
+                                    <li><a class="dropdown-item" href="#">Surveying I [CE 504]</a></li>
+                                    <li><a class="dropdown-item" href="#">Fluid mechanics[CE505]</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fourth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Hydraulics [CE555]</a></li>
+                                    <li><a class="dropdown-item" href="#">Surveying II  [CE554]</a></li>
+                                    <li><a class="dropdown-item" href="#">Theory of Structure [CE551]</a></li>
+                                    <li><a class="dropdown-item" href="#">Probability & Statistics  [SH552]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Geology [CE553]</a></li>
+                                    <li><a class="dropdown-item" href="#">Building Drawing [CE556]</a></li>
+                                    <li><a class="dropdown-item" href="#">Soil Mechanics [CE552]</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fifth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Theory of structures ii[CE601]</a></li>
+                                    <li><a class="dropdown-item" href="#">Water Supply Engineering[CE605]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering hydrology[CE606]</a></li>
+                                    <li><a class="dropdown-item" href="#">Concrete Technology and masonry structure[CE603]</a></li>
+                                    <li><a class="dropdown-item" href="#">Numerical Methods[ SH603]</a></li>
+                                    <li><a class="dropdown-item" href="#">Foundation Engineering[CE602]</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Six Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Design of Steel and Timber Structure [CE651]</a></li>
+                                    <li><a class="dropdown-item" href="#">Communication English [SH651]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Economics [CE655]</a></li>
+                                    <li><a class="dropdown-item" href="#">Building Technology [CE652]</a></li>
+                                    <li><a class="dropdown-item" href="#">Sanitary Engineering [CE656]</a></li>
+                                    <li><a class="dropdown-item" href="#">Transportation Engineering [CE653]</a></li>
+                                    <li><a class="dropdown-item" href="#">Irrigation and Drainage [CE654]</a></li>
+                                    <li><a class="dropdown-item" href="#">Survey Camp</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Seventh Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Hydropower Engineering [CE704]</a></li>
+                                    <li><a class="dropdown-item" href="#">Project Engineering [CE701]</a></li>
+                                    <li><a class="dropdown-item" href="#">Transportation Engineering II [CE703]</a></li>
+                                    <li><a class="dropdown-item" href="#">Estimating & Costing [CE705]</a></li>
+                                    <li><a class="dropdown-item" href="#">Elective I [CE725]</a></li>
+                                    <li><a class="dropdown-item" href="#">Design of RCC Structure [CE702]</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Eighth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Computational Techniques in Civil Engineering</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Professional Practice</a></li>
+                                    <li><a class="dropdown-item" href="#">Technology Environment and Society</a></li>
+                                    <li><a class="dropdown-item" href="#">Construction Management</a></li>
+                                    <li><a class="dropdown-item" href="#">Project (Part II)</a></li>
+                                    <li><a class="dropdown-item" href="#">Elective II</a></li>
+                                    <li><a class="dropdown-item" href="#">Elective III</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">BE Electrical</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">First Semester</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Engineering Mathematics I</a></li>
+                                        <li><a class="dropdown-item" href="#">Computer Programming</a></li>
+                                        <li><a class="dropdown-item" href="#">Engineering Drawing I</a></li>
+                                        <li><a class="dropdown-item" href="#">Engineering Physics</a></li>
+                                        <li><a class="dropdown-item" href="#">Applied Mechanics</a></li>
+                                        <li><a class="dropdown-item" href="#">Basic Electrical Engineering</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second Semester</a>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics II</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electronics Engineering</a></li>
+                                    <li><a class="dropdown-item" href="#">Chemistry</a></li>
+                                    <li><a class="dropdown-item" href="#">Fundamental of Thermodynamics</a></li>
+                                    <li><a class="dropdown-item" href="#">Workshop Technology</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Third Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics III</a></li>
+                                    <li><a class="dropdown-item" href="#">Object Oriented Programming</a></li>
+                                    <li><a class="dropdown-item" href="#">Electric Circuit Theory</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical Engineering Material</a></li>
+                                    <li><a class="dropdown-item" href="#">Electronics Devices and Circuits</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Logic</a></li>
+                                    <li><a class="dropdown-item" href="#">Electromagnetic</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fourth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Electrical Machine I</a></li>
+                                    <li><a class="dropdown-item" href="#">Numerical Method</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Mathematics</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrumentation I</a></li>
+                                    <li><a class="dropdown-item" href="#">Power System Analysis I</a></li>
+                                    <li><a class="dropdown-item" href="#">Microprocessor</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fifth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Communication English</a></li>
+                                    <li><a class="dropdown-item" href="#">Probability and Statistic</a></li>
+                                    <li><a class="dropdown-item" href="#">Control System</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrumentation II</a></li>
+                                    <li><a class="dropdown-item" href="#">Power System Analysis II</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical Machine Design</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical Machine II</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Six Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Engineering Economics</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Control System</a></li>
+                                    <li><a class="dropdown-item" href="#">Signal Analysis</a></li>
+                                    <li><a class="dropdown-item" href="#">Switchgear and Protection</a></li>
+                                    <li><a class="dropdown-item" href="#">Industrial Distribution and Illumination</a></li>
+                                    <li><a class="dropdown-item" href="#">Hydro Power</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Seventh Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Project Engineering</a></li>
+                                    <li><a class="dropdown-item" href="#">Organization and Management</a></li>
+                                    <li><a class="dropdown-item" href="#">Technology Environment and Society</a></li>
+                                    <li><a class="dropdown-item" href="#">Power Electronics</a></li>
+                                    <li><a class="dropdown-item" href="#">Utilization of Electrical Energy</a></li>
+                                    <li><a class="dropdown-item" href="#">Elective I</a></li>
+                                    <li><a class="dropdown-item" href="#">Power Plant Equipment</a></li>
+                                    <li><a class="dropdown-item" href="#">Project (Part A)</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Eighth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Engineering Professional Practice</a></li>
+                                    <li><a class="dropdown-item" href="#">High Voltage Engineering</a></li>
+                                    <li><a class="dropdown-item" href="#">Power Plant Design</a></li>
+                                    <li><a class="dropdown-item" href="#">Transmission and Distribution Design</a></li>
+                                    <li><a class="dropdown-item" href="#">Elective II</a></li>
+                                    <li><a class="dropdown-item" href="#">Elective III</a></li>
+                                    <li><a class="dropdown-item" href="#">Project (Part B)</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">BE Electronic & Communication</a>
+                            <ul class="dropdown-menu">
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">First Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics I  [SH401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer Programming [CT401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing I [ME401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Physics [SH452]</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Mechanics [CE451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electrical Engineering [EE451]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics II [SH451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing II [ME451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electronics Engineering  [EX451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Chemistry [SH403]</a></li>
+                                    <li><a class="dropdown-item" href="#">Fundamental of Thermodynamics  & Heat Transfer [ME402]</a></li>
+                                    <li><a class="dropdown-item" href="#">Workshop Technology</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Third Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics III  [SH501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Object Oriented Programming [CT 501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical Circuit Theory [EE 501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical Engineering Material [EE 502]</a></li>
+                                    <li><a class="dropdown-item" href="#">Electronics Devices and Circuit [EX 501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Logic [EX 502]</a></li>
+                                    <li><a class="dropdown-item" href="#">Electromagnetism [EX 503]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fourth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Electrical Machine [EE 554]</a></li>
+                                    <li><a class="dropdown-item" href="#">Numerical Method [SH 553]</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Mathematics [SH 551]</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrumentation I [EE 552]</a></li>
+                                    <li><a class="dropdown-item" href="#">Power System [EE 553]</a></li>
+                                    <li><a class="dropdown-item" href="#">Microprocessor [EX 551]</a></li>
+                                    <li><a class="dropdown-item" href="#">Discrete Structure [CT 551]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fifth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Communication English [EG604SH]</a></li>
+                                    <li><a class="dropdown-item" href="#">Probability and Statistics</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer organization and Architecture (COA)</a></li>
+                                    <li><a class="dropdown-item" href="#">Control System</a></li>
+                                    <li><a class="dropdown-item" href="#">Advanced Electronics</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrumentation II (Access Complete Notes)</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer Graphic</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Six Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Engineering Economics [CE 655]</a></li>
+                                <li><a class="dropdown-item" href="#">Signal Analysis</a></li>
+                                <li><a class="dropdown-item" href="#">Communication System I [EX 652]</a></li>
+                                <li><a class="dropdown-item" href="#">Antenna and Propagation</a></li>
+                                <li><a class="dropdown-item" href="#">Embedded System [CT 655]</a></li>
+                                <li><a class="dropdown-item" href="#">Computer Networks</a></li>
+                                <li><a class="dropdown-item" href="#">Minor Project</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Seventh Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ICT Project Management</a></li>
+                                <li><a class="dropdown-item" href="#">Organization and Management [ME 708]</a></li>
+                                <li><a class="dropdown-item" href="#">Energy Environment and Society</a></li>
+                                <li><a class="dropdown-item" href="#">Filter Design</a></li>
+                                <li><a class="dropdown-item" href="#">Communication System II</a></li>
+                                <li><a class="dropdown-item" href="#">Telecommunication</a></li>
+                                <li><a class="dropdown-item" href="#">Elective I</a></li>
+                                <li><a class="dropdown-item" href="#">Project I</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Eighth Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Engineering Professional Practice</a></li>
+                                <li><a class="dropdown-item" href="#">Digital Signal Processing (DSP) [EX 753]</a></li>
+                                <li><a class="dropdown-item" href="#">Wireless Communication</a></li>
+                                <li><a class="dropdown-item" href="#">RF and Microwave Engineering</a></li>
+                                <li><a class="dropdown-item" href="#">Elective II</a></li>
+                                <li><a class="dropdown-item" href="#">Elective III</a></li>
+                                <li><a class="dropdown-item" href="#">Project II</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">BE Mechanical</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">First Semester</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Mathematics I  [SH401]</a></li>
+                                        <li><a class="dropdown-item" href="#">Computer Programming [CT401]</a></li>
+                                        <li><a class="dropdown-item" href="#">Engineering Drawing I [ME401]</a></li>
+                                        <li><a class="dropdown-item" href="#">Engineering Chemistry [SH403]</a></li>
+                                        <li><a class="dropdown-item" href="#">Fundamental of Thermodynamics  & Heat Transfer [ME402]</a></li>
+                                        <li><a class="dropdown-item" href="#">Workshop Technology [ME 403]</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second Semester</a>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics II [SH451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing II [ME451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electronics Engineering  [EX451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Physics [SH452]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electrical Engineering [EE451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Mechanics [CE451]</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Third Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics III  [SH501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Material Science [ME 501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Mechanics [ME 502]</a></li>
+                                    <li><a class="dropdown-item" href="#">Metrology [ME 503]</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Thermodynamics [ME 504]</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer Aided Drawing [ME 505]</a></li>
+                                    <li><a class="dropdown-item" href="#">Electromagnetism [EX 503]</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fourth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Probability And Statistics [SH 552]</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical Machine [EE 554]</a></li>
+                                    <li><a class="dropdown-item" href="#">Manufacturing And Production Processes [ME 551]</a></li>
+                                    <li><a class="dropdown-item" href="#">Strength of Materials [ME 552]</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrumentation and Measurement [ME 553]</a></li>
+                                    <li><a class="dropdown-item" href="#">Fluid Mechanics [ME 554]</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fifth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Numerical Methods [SH603]</a></li>
+                                    <li><a class="dropdown-item" href="#">Control System [EE602]</a></li>
+                                    <li><a class="dropdown-item" href="#">Organization and Management [ME601]</a></li>
+                                    <li><a class="dropdown-item" href="#">Mechanics of Solids [ME602]</a></li>
+                                    <li><a class="dropdown-item" href="#">Heat Transfer [ME 604]</a></li>
+                                    <li><a class="dropdown-item" href="#">Fluid Machines [ME605]</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Six Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Communication English [SH651]</a></li>
+                                    <li><a class="dropdown-item" href="#">Machine Design I [ME651]</a></li>
+                                    <li><a class="dropdown-item" href="#">Industrial Engineering and Management [ME652]</a></li>
+                                    <li><a class="dropdown-item" href="#">Theory of Mechanism and Machine I [ME653]</a></li>
+                                    <li><a class="dropdown-item" href="#">Internal Combustion Engines [ME654]</a></li>
+                                    <li><a class="dropdown-item" href="#">Energy Resources [ME655]</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Seventh Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Machine Design II [ME701]</a></li>
+                                    <li><a class="dropdown-item" href="#">Theory of Mechanism and Machine II [ME702]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Economics [ME703]</a></li>
+                                    <li><a class="dropdown-item" href="#">Turbo Machines [ME704]</a></li>
+                                    <li><a class="dropdown-item" href="#">Environment and Pollution Control [ME705]</a></li>
+                                    <li><a class="dropdown-item" href="#">Industrial Attachment [ME 706]</a></li>
+                                </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Eighth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Project Engineering [CE 751]</a></li>
+                                    <li><a class="dropdown-item" href="#">Finite Element Method [ME751]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Professional Practice [CE 752]</a></li>
+                                    <li><a class="dropdown-item" href="#">Project I & II ME</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Notes </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="syllabus_bct.html">BE Computer</a></li>
+                            <li><a class="dropdown-item" href="syllabus_bce.html">BE Civil</a></li>
+                            <li><a class="dropdown-item" href="syllabus_bel.html">BE Electrical</a></li>
+                            <li><a class="dropdown-item" href="syllabus_bex.html">BE Electronic & Communication</a></li>
+                            <li><a class="dropdown-item" href="syllabus_bme.html">BE Mechanical</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Old Questions</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">BE Computer</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">First Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="old_question.html">Mathematics I  [SH401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer Programming [CT401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing I [ME401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Physics [SH452]</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Mechanics [CE451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electrical Engineering [EE451]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics II [SH451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing II [ME451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electronics Engineering  [EX451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Chemistry [SH403]</a></li>
+                                    <li><a class="dropdown-item" href="#">Fundamental of Thermodynamics  & Heat Transfer [ME402]</a></li>
+                                    <li><a class="dropdown-item" href="#">Workshop Technology</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Third Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics III  [SH501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Object Oriented Programming [CT 501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical Circuit Theory [EE 501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Theory of Computation [CT 502]</a></li>
+                                    <li><a class="dropdown-item" href="#">Electronics Devices and Circuit [EX 501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Logic [EX 502]</a></li>
+                                    <li><a class="dropdown-item" href="#">Electromagnetism [EX 503]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fourth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Electrical Machine [EE 554]</a></li>
+                                    <li><a class="dropdown-item" href="#">Numerical Method [SH 553]</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Mathematics [SH 551]</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrumentation I [EE 552]</a></li>
+                                    <li><a class="dropdown-item" href="#">Data Structure and Algorithm [CT 552]</a></li>
+                                    <li><a class="dropdown-item" href="#">Microprocessor [EX 551]</a></li>
+                                    <li><a class="dropdown-item" href="#">Discrete Structure [CT 551]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fifth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Communication English [EG604SH]</a></li>
+                                    <li><a class="dropdown-item" href="#">Probability and Statistics</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer organization and Architecture (COA)</a></li>
+                                    <li><a class="dropdown-item" href="#">Software Engineering</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer Graphic (Access Reference Note)</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrumentation II (Access Complete Notes)</a></li>
+                                    <li><a class="dropdown-item" href="#">Data Communation (Access Important Questions)</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Six Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Engineering Economics [CE 655]</a></li>
+                                <li><a class="dropdown-item" href="#">Object Oriented Analysis and Design [CT 651]</a></li>
+                                <li><a class="dropdown-item" href="#">Artificial Intelligence [CT 653]</a></li>
+                                <li><a class="dropdown-item" href="#">Operating System [CT656]</a></li>
+                                <li><a class="dropdown-item" href="#">Embedded System [CT 655]</a></li>
+                                <li><a class="dropdown-item" href="#">Database Management System [CT 652]</a></li>
+                                <li><a class="dropdown-item" href="#">Minor Project</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Seventh Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ICT Project Management</a></li>
+                                <li><a class="dropdown-item" href="#">Organization and Management [ME 708]</a></li>
+                                <li><a class="dropdown-item" href="#">Energy Environment and Society</a></li>
+                                <li><a class="dropdown-item" href="#">Distributed System</a></li>
+                                <li><a class="dropdown-item" href="#">Computer Networks and Security</a></li>
+                                <li><a class="dropdown-item" href="#">Digital Signal Analysis and Processing</a></li>
+                                <li><a class="dropdown-item" href="#">Elective I</a></li>
+                                <li><a class="dropdown-item" href="#">Project I</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Eighth Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Engineering Professional Practice</a></li>
+                                <li><a class="dropdown-item" href="#">Information System</a></li>
+                                <li><a class="dropdown-item" href="#">Internet and Intranet</a></li>
+                                <li><a class="dropdown-item" href="#">Simulation and Modeling</a></li>
+                                <li><a class="dropdown-item" href="#">Elective II</a></li>
+                                <li><a class="dropdown-item" href="#">Elective III</a></li>
+                                <li><a class="dropdown-item" href="#">Project II</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">BE Civil</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">First Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Engineering Mathematics I  [SH401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing1 [ME401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Chemistry [SH403]</a></li>
+                                    <li><a class="dropdown-item" href="#">Fundamental of Thermodynamics & Heat Transfer [ME402]</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer Programming [CT401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Workshop Technology</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Applied Mechanics [CE451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Mathematics II [SH451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Physics [SH452]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electronics Engineering [EX451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing II [ME451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electrical Engineering [EE451]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Third Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Civil Engineering Materials[CE506]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Mathematics III [SH501]</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Mechanics(Dynamics) [CE503]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Geology I [CE503]</a></li>
+                                    <li><a class="dropdown-item" href="#">Strength of Materials [CE 502]</a></li>
+                                    <li><a class="dropdown-item" href="#">Surveying I [CE 504]</a></li>
+                                    <li><a class="dropdown-item" href="#">Fluid mechanics[CE505]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fourth Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Hydraulics [CE555]</a></li>
+                                <li><a class="dropdown-item" href="#">Surveying II  [CE554]</a></li>
+                                <li><a class="dropdown-item" href="#">Theory of Structure [CE551]</a></li>
+                                <li><a class="dropdown-item" href="#">Probability & Statistics  [SH552]</a></li>
+                                <li><a class="dropdown-item" href="#">Engineering Geology [CE553]</a></li>
+                                <li><a class="dropdown-item" href="#">Building Drawing [CE556]</a></li>
+                                <li><a class="dropdown-item" href="#">Soil Mechanics [CE552]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fifth Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Theory of structures ii[CE601]</a></li>
+                                <li><a class="dropdown-item" href="#">Water Supply Engineering[CE605]</a></li>
+                                <li><a class="dropdown-item" href="#">Engineering hydrology[CE606]</a></li>
+                                <li><a class="dropdown-item" href="#">Concrete Technology and masonry structure[CE603]</a></li>
+                                <li><a class="dropdown-item" href="#">Numerical Methods[ SH603]</a></li>
+                                <li><a class="dropdown-item" href="#">Foundation Engineering[CE602]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Six Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Design of Steel and Timber Structure [CE651]</a></li>
+                                    <li><a class="dropdown-item" href="#">Communication English [SH651]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Economics [CE655]</a></li>
+                                    <li><a class="dropdown-item" href="#">Building Technology [CE652]</a></li>
+                                    <li><a class="dropdown-item" href="#">Sanitary Engineering [CE656]</a></li>
+                                    <li><a class="dropdown-item" href="#">Transportation Engineering [CE653]</a></li>
+                                    <li><a class="dropdown-item" href="#">Irrigation and Drainage [CE654]</a></li>
+                                    <li><a class="dropdown-item" href="#">Survey Camp</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Seventh Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Hydropower Engineering [CE704]</a></li>
+                                <li><a class="dropdown-item" href="#">Project Engineering [CE701]</a></li>
+                                <li><a class="dropdown-item" href="#">Transportation Engineering II [CE703]</a></li>
+                                <li><a class="dropdown-item" href="#">Estimating & Costing [CE705]</a></li>
+                                <li><a class="dropdown-item" href="#">Elective I [CE725]</a></li>
+                                <li><a class="dropdown-item" href="#">Design of RCC Structure [CE702]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Eighth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Computational Techniques in Civil Engineering</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Professional Practice</a></li>
+                                    <li><a class="dropdown-item" href="#">Technology Environment and Society</a></li>
+                                    <li><a class="dropdown-item" href="#">Construction Management</a></li>
+                                    <li><a class="dropdown-item" href="#">Project (Part II)</a></li>
+                                    <li><a class="dropdown-item" href="#">Elective II</a></li>
+                                    <li><a class="dropdown-item" href="#">Elective III</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">BE Electrical</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">First Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Engineering Mathematics I</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer Programming</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing I</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Physics</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Mechanics</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electrical Engineering</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics II</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electronics Engineering</a></li>
+                                    <li><a class="dropdown-item" href="#">Chemistry</a></li>
+                                    <li><a class="dropdown-item" href="#">Fundamental of Thermodynamics</a></li>
+                                    <li><a class="dropdown-item" href="#">Workshop Technology</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Third Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics III</a></li>
+                                    <li><a class="dropdown-item" href="#">Object Oriented Programming</a></li>
+                                    <li><a class="dropdown-item" href="#">Electric Circuit Theory</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical Engineering Material</a></li>
+                                    <li><a class="dropdown-item" href="#">Electronics Devices and Circuits</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Logic</a></li>
+                                    <li><a class="dropdown-item" href="#">Electromagnetic</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fourth Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Electrical Machine I</a></li>
+                                <li><a class="dropdown-item" href="#">Numerical Method</a></li>
+                                <li><a class="dropdown-item" href="#">Applied Mathematics</a></li>
+                                <li><a class="dropdown-item" href="#">Instrumentation I</a></li>
+                                <li><a class="dropdown-item" href="#">Power System Analysis I</a></li>
+                                <li><a class="dropdown-item" href="#">Microprocessor</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fifth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Communication English</a></li>
+                                    <li><a class="dropdown-item" href="#">Probability and Statistic</a></li>
+                                    <li><a class="dropdown-item" href="#">Control System</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrumentation II</a></li>
+                                    <li><a class="dropdown-item" href="#">Power System Analysis II</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical Machine Design</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical Machine II</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Six Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Engineering Economics</a></li>
+                                <li><a class="dropdown-item" href="#">Digital Control System</a></li>
+                                <li><a class="dropdown-item" href="#">Signal Analysis</a></li>
+                                <li><a class="dropdown-item" href="#">Switchgear and Protection</a></li>
+                                <li><a class="dropdown-item" href="#">Industrial Distribution and Illumination</a></li>
+                                <li><a class="dropdown-item" href="#">Hydro Power</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Seventh Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Project Engineering</a></li>
+                                    <li><a class="dropdown-item" href="#">Organization and Management</a></li>
+                                    <li><a class="dropdown-item" href="#">Technology Environment and Society</a></li>
+                                    <li><a class="dropdown-item" href="#">Power Electronics</a></li>
+                                    <li><a class="dropdown-item" href="#">Utilization of Electrical Energy</a></li>
+                                    <li><a class="dropdown-item" href="#">Elective I</a></li>
+                                    <li><a class="dropdown-item" href="#">Power Plant Equipment</a></li>
+                                    <li><a class="dropdown-item" href="#">Project (Part A)</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Eighth Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Engineering Professional Practice</a></li>
+                                <li><a class="dropdown-item" href="#">High Voltage Engineering</a></li>
+                                <li><a class="dropdown-item" href="#">Power Plant Design</a></li>
+                                <li><a class="dropdown-item" href="#">Transmission and Distribution Design</a></li>
+                                <li><a class="dropdown-item" href="#">Elective II</a></li>
+                                <li><a class="dropdown-item" href="#">Elective III</a></li>
+                                <li><a class="dropdown-item" href="#">Project (Part B)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">BE Electronic & Communication</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">First Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics I  [SH401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer Programming [CT401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing I [ME401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Physics [SH452]</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Mechanics [CE451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electrical Engineering [EE451]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics II [SH451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing II [ME451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electronics Engineering  [EX451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Chemistry [SH403]</a></li>
+                                    <li><a class="dropdown-item" href="#">Fundamental of Thermodynamics  & Heat Transfer [ME402]</a></li>
+                                    <li><a class="dropdown-item" href="#">Workshop Technology</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Third Semester</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Mathematics III  [SH501]</a></li>
+                                <li><a class="dropdown-item" href="#">Object Oriented Programming [CT 501]</a></li>
+                                <li><a class="dropdown-item" href="#">Electrical Circuit Theory [EE 501]</a></li>
+                                <li><a class="dropdown-item" href="#">Electrical Engineering Material [EE 502]</a></li>
+                                <li><a class="dropdown-item" href="#">Electronics Devices and Circuit [EX 501]</a></li>
+                                <li><a class="dropdown-item" href="#">Digital Logic [EX 502]</a></li>
+                                <li><a class="dropdown-item" href="#">Electromagnetism [EX 503]</a></li>
+                            </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fourth Semester</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Electrical Machine [EE 554]</a></li>
+                                <li><a class="dropdown-item" href="#">Numerical Method [SH 553]</a></li>
+                                <li><a class="dropdown-item" href="#">Applied Mathematics [SH 551]</a></li>
+                                <li><a class="dropdown-item" href="#">Instrumentation I [EE 552]</a></li>
+                                <li><a class="dropdown-item" href="#">Power System [EE 553]</a></li>
+                                <li><a class="dropdown-item" href="#">Microprocessor [EX 551]</a></li>
+                                <li><a class="dropdown-item" href="#">Discrete Structure [CT 551]</a></li>
+                            </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fifth Semester</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Communication English [EG604SH]</a></li>
+                                <li><a class="dropdown-item" href="#">Probability and Statistics</a></li>
+                                <li><a class="dropdown-item" href="#">Computer organization and Architecture (COA)</a></li>
+                                <li><a class="dropdown-item" href="#">Control System</a></li>
+                                <li><a class="dropdown-item" href="#">Advanced Electronics</a></li>
+                                <li><a class="dropdown-item" href="#">Instrumentation II (Access Complete Notes)</a></li>
+                                <li><a class="dropdown-item" href="#">Computer Graphic</a></li>
+                            </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Six Semester</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Engineering Economics [CE 655]</a></li>
+                                <li><a class="dropdown-item" href="#">Signal Analysis</a></li>
+                                <li><a class="dropdown-item" href="#">Communication System I [EX 652]</a></li>
+                                <li><a class="dropdown-item" href="#">Antenna and Propagation</a></li>
+                                <li><a class="dropdown-item" href="#">Embedded System [CT 655]</a></li>
+                                <li><a class="dropdown-item" href="#">Computer Networks</a></li>
+                                <li><a class="dropdown-item" href="#">Minor Project</a></li>
+                            </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Seventh Semester</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ICT Project Management</a></li>
+                                <li><a class="dropdown-item" href="#">Organization and Management [ME 708]</a></li>
+                                <li><a class="dropdown-item" href="#">Energy Environment and Society</a></li>
+                                <li><a class="dropdown-item" href="#">Filter Design</a></li>
+                                <li><a class="dropdown-item" href="#">Communication System II</a></li>
+                                <li><a class="dropdown-item" href="#">Telecommunication</a></li>
+                                <li><a class="dropdown-item" href="#">Elective I</a></li>
+                                <li><a class="dropdown-item" href="#">Project I</a></li>
+                            </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Eighth Semester</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Engineering Professional Practice</a></li>
+                                <li><a class="dropdown-item" href="#">Digital Signal Processing (DSP) [EX 753]</a></li>
+                                <li><a class="dropdown-item" href="#">Wireless Communication</a></li>
+                                <li><a class="dropdown-item" href="#">RF and Microwave Engineering</a></li>
+                                <li><a class="dropdown-item" href="#">Elective II</a></li>
+                                <li><a class="dropdown-item" href="#">Elective III</a></li>
+                                <li><a class="dropdown-item" href="#">Project II</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">BE Mechanical</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">First Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics I  [SH401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer Programming [CT401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing I [ME401]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Chemistry [SH403]</a></li>
+                                    <li><a class="dropdown-item" href="#">Fundamental of Thermodynamics  & Heat Transfer [ME402]</a></li>
+                                    <li><a class="dropdown-item" href="#">Workshop Technology [ME 403]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mathematics II [SH451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Drawing II [ME451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electronics Engineering  [EX451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Physics [SH452]</a></li>
+                                    <li><a class="dropdown-item" href="#">Basic Electrical Engineering [EE451]</a></li>
+                                    <li><a class="dropdown-item" href="#">Applied Mechanics [CE451]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Third Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Mathematics III  [SH501]</a></li>
+                                <li><a class="dropdown-item" href="#">Material Science [ME 501]</a></li>
+                                <li><a class="dropdown-item" href="#">Engineering Mechanics [ME 502]</a></li>
+                                <li><a class="dropdown-item" href="#">Metrology [ME 503]</a></li>
+                                <li><a class="dropdown-item" href="#">Applied Thermodynamics [ME 504]</a></li>
+                                <li><a class="dropdown-item" href="#">Computer Aided Drawing [ME 505]</a></li>
+                                <li><a class="dropdown-item" href="#">Electromagnetism [EX 503]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fourth Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Probability And Statistics [SH 552]</a></li>
+                                <li><a class="dropdown-item" href="#">Electrical Machine [EE 554]</a></li>
+                                <li><a class="dropdown-item" href="#">Manufacturing And Production Processes [ME 551]</a></li>
+                                <li><a class="dropdown-item" href="#">Strength of Materials [ME 552]</a></li>
+                                <li><a class="dropdown-item" href="#">Instrumentation and Measurement [ME 553]</a></li>
+                                <li><a class="dropdown-item" href="#">Fluid Mechanics [ME 554]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fifth Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Numerical Methods [SH603]</a></li>
+                                <li><a class="dropdown-item" href="#">Control System [EE602]</a></li>
+                                <li><a class="dropdown-item" href="#">Organization and Management [ME601]</a></li>
+                                <li><a class="dropdown-item" href="#">Mechanics of Solids [ME602]</a></li>
+                                <li><a class="dropdown-item" href="#">Heat Transfer [ME 604]</a></li>
+                                <li><a class="dropdown-item" href="#">Fluid Machines [ME605]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Six Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Communication English [SH651]</a></li>
+                                <li><a class="dropdown-item" href="#">Machine Design I [ME651]</a></li>
+                                <li><a class="dropdown-item" href="#">Industrial Engineering and Management [ME652]</a></li>
+                                <li><a class="dropdown-item" href="#">Theory of Mechanism and Machine I [ME653]</a></li>
+                                <li><a class="dropdown-item" href="#">Internal Combustion Engines [ME654]</a></li>
+                                <li><a class="dropdown-item" href="#">Energy Resources [ME655]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Seventh Semester</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Machine Design II [ME701]</a></li>
+                                <li><a class="dropdown-item" href="#">Theory of Mechanism and Machine II [ME702]</a></li>
+                                <li><a class="dropdown-item" href="#">Engineering Economics [ME703]</a></li>
+                                <li><a class="dropdown-item" href="#">Turbo Machines [ME704]</a></li>
+                                <li><a class="dropdown-item" href="#">Environment and Pollution Control [ME705]</a></li>
+                                <li><a class="dropdown-item" href="#">Industrial Attachment [ME 706]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Eighth Semester</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Project Engineering [CE 751]</a></li>
+                                    <li><a class="dropdown-item" href="#">Finite Element Method [ME751]</a></li>
+                                    <li><a class="dropdown-item" href="#">Engineering Professional Practice [CE 752]</a></li>
+                                    <li><a class="dropdown-item" href="#">Project I & II ME</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                    </ul>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notice</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Colleges</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact_us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <br>
+        <main role="main">
+            <div class="container"><br>
+                <h2 class="text-center">Soil Mechanics</h2>
+                <h6 class="text-center">CE 552</h6>
+                <div class="row">
+                    <div class="col">
+                        <p>Lecture : 3 <br>Tutorial: 1<br>Practical: 2/2</p>
+                    </div>
+                    <div class="col text-right">
+                        <p>Year : II<br>Part : II</p>
+                    </div>
+                </div>
+                <p><b>Course Objective:</b><br>To provide concepts of soil engineering, including the science and technology of soils and their application to problems in civil engineering; emphasize on fundamentals and relevant principles of soil mechanics giving an overall picture of the behavior of soils; describe the nature of some of the soil problems encountered in civil engineering.</p>
+                <div class="row">
+                    <div class="col">
+                        <p><b>1. Introduction</b></p>
+                        <ul class="list-unstyled">
+                            <li><a href="">1.1 Previewofgeotechnical problems in civil engineeringand infrastructure development</a></li>
+                            <li><a href="">1.2 Historical development of soil mechanics</a></li>
+                            <li><a href="">1.3 Soil formation and soil type</a></li>
+                         </ul>
+                    </div>
+                    <div class="row">
+                        <p class="text-right"><b>(1 Hour)</b></p>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <p><b>2. Solids-Water-Air Relations and lndex Properties of Soils</b></p>
+                        <ul class="list-unstyled">
+                            <li><a href="">2.1 Phase diagram</a></li>
+                            <li><a href="">2.2 Simple definitions and their relationships</a></li>
+                            <li><a href="">2.3 lndex properties of soils</a></li>
+                            <li><a href="">2.4 Determinations of various index properties</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="text-right"><b>(5 Hours)</b></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p><b>3. Soil ldentifications and Classific</b></p>
+                        <ul class="list-unstyled">
+                            <li><a href="">3.1 Introduction</a></li>
+                            <li><a href="">3.2 Field ldentification of soil</a></li>
+                            <li><a href="">3.3 Soil classification-Textural, ISSCS, MIT, BSCS, USCS and AASHTO soil classification system</a></li>
+                            <li><a href="">3.4 Application of soil classification system</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="text-right"><b>(2 Hours)</b></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <p><b>4. Soil Structure and Clay Minerals</b></p>
+                        <ul class="list-unstyled">
+                            <li><a href="">4.1 Introduction</a></li>
+                            <li><a href="">4.2 Clay minerals</a></li>
+                            <li><a href="">4.3 Clay particle interaction</a></li>
+                            <li><a href="">4.4 Soil structure and fabrics</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="text-right"><b>(2 Hours)</b></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <p><b>5. Soil Compaction</b></p>
+                        <ul class="list-unstyled">
+                            <li><a href="">5.1 Introduction</a></li>
+                            <li><a href="">5.2 Laboratory tests</a></li>
+                            <li><a href="">5.3 Factors affecting compaction</a></li>
+                            <li><a href="">5.4 Structure and engineering behaviour of compacted cohesive soils</a></li>
+                            <li><a href="">5.5 Compaction specification and field control</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="text-right"><b>(3 Hours)</b></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <p><b>6. Principle of Effrtive Stress, Capillarity and Permeability</b></p>
+                        <ul class="list-unstyled">
+                            <li><a href="">6.1 Condition of uniform flow, expression for the shear stress on the booundary of channel</a></li>
+                            <li><a href="">6.2 Flow resistance equations. Darcy-Weisbach, Chezy and Manning eqquations and their relationship.</a></li>
+                            <li><a href="">6.3 Determination and factors affecting manning's roughness coefficient</a></li>
+                            <li><a href="">6.4 Velocity profile for laminar and turbulent flow, velocity distribution</a></li>
+                            <li><a href="">6.5 Velocity distribution coefficients and their application</a></li>
+                            <li><a href="">6.6 Conveyance, section factor, normal depth and hydraulic exponent for uniform flow computation</a></li>
+                            <li><a href="">6.7 Problems of uniform flow computation</a></li>
+                            <li><a href="">6.8 Best Hydraulic channel sections and determination of section dimensions (rectangular, triangular, trapezoidal and circular section)</a></li>
+                            <li><a href="">6.9 Computer programme coding for simple problems</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="text-right"><b>(7 Hours)</b></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <p><b>7. Energy and Momemtum Principles in Open Channel Flow</b></p>
+                        <ul class="list-unstyled">
+                            <li><a href="">7.1 Energy principle, specific energy, specific energy curve, criteria for critical flow</a></li>
+                            <li><a href="">7.2 Critical depth computations for all kind of channel sections (prismatic as well as non-prismatic) and criteria for critical state of flow</a></li>
+                            <li><a href="">7.3 Discharge depth relationship</a></li>
+                            <li><a href="">7.4 Application of energy principle and concepts of critical depth concepts(channel width reduction, rise in channel bed, venture flume and braod crested weir)</a></li>
+                            <li><a href="">7.5 Momentum principle, specific force, specific force cunre, criteria for critical state of flow, conjugate depth</a></li>
+                            <li><a href="">7.6 Computer programme coding for simple problems</a></li>
+                        </ul>
+                        
+                        
+                        
+                    </div>
+                    <div class="col">
+                        <p class="text-right"><b>(10 Hours)</b></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <p><b>8. Non-uniform gradually varied flow (GV)</b></p>
+                        <ul class="list-unstyled">
+                            <li><a href="">8.1 lntroduction to GVF. Basic assumptions, Dynamic equation and its physical meaning</a></li>
+                            <li><a href="">8.2 Characteristics bed slopes (mild, critical, steep, horizontal and adverse)</a></li>
+                            <li><a href="">8.3 Characteristics and analysis of flow profiles</a></li>
+                            <li><a href="">8.4 Computation of CVF in prismatic channels by (graphical integration, direct integration and direct step and standard step methods)</a></li>
+                            <li><a href="">8.5 Computer programme coding for simple problems</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="text-right"><b>(8 Hours)</b></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <p><b>9. Non-uniform rapidly varied flow (RV)</b></p>
+                        <ul class="list-unstyled">
+                            <li><a href="">9.1 Characteristics of RVF. Hydraulic jump as an energy dissipater</a></li>
+                            <li><a href="">9.2 Hydraulic jump in a horizontal rectangular channel. Relationship between hydraulic jump variables (conjugate depth, height of the jump, efficiency jump, length of the jump)</a></li>
+                            <li><a href="">9.3 Energy loss in jump</a></li>
+                            <li><a href="">9.4 Classification of the jump based on the tail water level and Froude number</a></li>
+                            <li><a href="">9.5 Practical application of jump at spillway toe, falls etc</a></li>
+                            <li><a href="">9.6 Computer programme coding for simple problems</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="text-right"><b>(4 Hours)</b></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <p><b>10. Flow in Mobile Boundary Chan</b></p>
+                        <ul class="list-unstyled">
+                            <li><a href="">10.1 lntroduction to rigid and mobile boundary channel</a></li>
+                            <li><a href="">10.2 Rigid boundary channel and its design principle (minimum permissible velocity approach)</a></li>
+                            <li><a href="">10.3 Definition of alluvial channel. Shear stress distribution on the channel boundary</a></li>
+                            <li><a href="">10.4 lncipien[ motion condition</a></li>
+                            <li><a href="">10.5 Design of MBC by three approaches (the permissible velocity, tractive force and regime theory approaches)</a></li>
+                            <li><a href="">10.6 lntroduction to Shied diagram and its application for designing MBC</a></li>
+                            <li><a href="">10.7 Formation of river beds based on the shear stress</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="text-right"><b>(4 Hours)</b></p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <p><b>References:</b></p>
+                   
+                        <ul class="list-unstyled">
+                            <li><a href="">1. VenTe Chow, "Open channel hydraulics'. McGraw-Hill book company limited.</a></li>
+                            <li><a href="">2. K G RangaRaju "Flow through open channel',.Tala Mccraw-Hill Publishing Company Limited, New Delhi, Second Edition.</a></li>
+                            <li><a href="">3. D.S. Kumar 'Fluid Mechanics and Fluid power Engineering', S.K. Kataria and Sons.</a></li>
+                            <li><a href="">4. K. L. Kumar'Engineering Fluid Mechanics', Eurasia Publishing house (P) Ltd. Ram Nagar New Delhi.</a></li>
+                            <li><a href="">5. S Ramamrutham 'Hydraulics fluid mechanics and fluid machines' DhanpatRai Publishing Company (P) Ltd. New Delhi.</a></li>
+                        </ul>
+                    </div>
+                     
+                
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <p><b>Practical:</b></p>
+                        
+                        <ul class="list-unstyled">
+                            <li><a href="">1. Head loss in Pipe</a></li>
+                            <li><a href="">2. Determination of Manning's coefficient for different surfaces.</a></li>
+                            <li><a href="">3. Flow through open sluice gate</a></li>
+                            <li><a href="">4. Hump and constricted flow analysis</a></li>
+                            <li><a href="">5. Hydraulic jump analysis</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div class="row"> 
+                    <div class="col">
+                        <p><b>Tutorial:</b></p>
+                        <p>There shall be related tutorials exercised in class and given as regular homework exercises. Tutorial can be as following for each specified chapters.</p>
+
+                        <div class="row">
+                            <div class="col-8">
+                                <p><b>1. Pipe Flow</b></p>
+                                <p>Theory, definition and concept type questions<br>Practical examples, numerical examples and derivation type questions<br>There will be tutorial for each sub-section</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-right"><b>(3 Hours)</b></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-8">
+                                <p><b>2. Simple Pipe Flow Problems and their Solution</b></p>
+                                <p>Theory, definition and concept type questions<br>Practical examples, numerical examples and derivation type questions</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-right"><b>(2 Hours)</b></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-8">
+                                <p><b>3. Three Reservoir Problems and pipe Network</b></p>
+                                <p>Theory, definition and concept type questions<br>Practical examples, and numerical examples types questions<br>Use of computer programme(studied in l/l) for solving exercises</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-right"><b>(4 Hours)</b></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <p><b>4. Unsteady Flow in Pipes</b></p>
+                                <p>Theory, definition and concept type questions<br>Practical examples, numerical examples and derivation type questions<br>There will be tutorial for each sub-section</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-right"><b>(3 Hours)</b></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-8">
+                                <p><b>5. Basics of Open Channel Flow</b></p>
+                                <p>Theory, definition and concept type questions</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-right"><b>(2 Hours)</b></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-8">
+                                <p><b>6. Uniform Flow</b></p>
+                                <p>Theory, definition and concept type questions<br>Practical examples, numerical examples and derivation type questions<br>There will be tutorial for each sub-section<br>Use of computer programme (studied in l/l) to solve some problems</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-right"><b>(3 Hours)</b></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-8">
+                                <p><b>7. Energy and Momentum Principles in Open Channe! Flow</b></p>
+                                <p>Theory, definition and concept type questions<br>Practical examples, numerical examples and derivation type questions<br>There will be tutorial for each sub-section<br>Use of computer programme (studied in l/l) to solve some problems</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-right"><b>(5 Hours)</b></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-8">
+                                <p><b>8. Non-Uniform Gradually Varied Flow</b></p>
+                                <p>Theory, definition and concept type questions<br>Practical examples, numerical examples and derivation type questions<br>Drawings for flow profiles<br>There will be tutorial for each sub-section<br>Use of computer programmes to solve some problems.</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-right"><b>(4 Hours)</b></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-8">
+                                <p><b>9. Non-Uniform Rapidly Varied Flow</b></p>
+                                <p>Theory, definition and concept type questions<br>Practical examples, numerical examples and derivation type questions<br>There will be tutorial for each sub-section</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-right"><b>(2 Hours)</b></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-8">
+                                <p><b>10. Flow in Mobile Boundary Channel</b></p>
+                                <p>Theory, definition and concept type questions<br>Practical examples, numerical examples and derivation type questions</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-right"><b>(2 Hours)</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+            </div>
+            <!-- FOOTER -->
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6 col-md">
+                      <h5>Old Questions</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Mathematics II  [SH451]</a></li>
+                        <li><a class="text-muted" href="#">Engineering Drawing II [ME451]</a></li>
+                        <li><a class="text-muted" href="#">Basic Electronics Engineering [EX451]</a></li>
+                        <li><a class="text-muted" href="#">Engineering Chemistry [SH453]</a></li>
+                        <li><a class="text-muted" href="#">Fundamental of Thermodynamics  & Heat Transfer [ME452]</a></li>
+                        <li><a class="text-muted" href="#">Workshop Technology</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <h5>Notes</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Mathematics II  [SH451]</a></li>
+                        <li><a class="text-muted" href="#">Engineering Drawing II [ME451]</a></li>
+                        <li><a class="text-muted" href="#">Basic Electronics Engineering [EX451]</a></li>
+                        <li><a class="text-muted" href="#">Engineering Chemistry [SH453]</a></li>
+                        <li><a class="text-muted" href="#">Fundamental of Thermodynamics  & Heat Transfer [ME452]</a></li>
+                        <li><a class="text-muted" href="#">Workshop Technology</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <h5>Quick Links</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="about_us.html">About Us</a></li>
+                        <li><a class="text-muted" href="#">Colleges</a></li>
+                        <li><a class="text-muted" href="#">Notice</a></li>
+                        <li><a class="text-muted" href="contact_us.html">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+               
+            </footer>
+          
+        </main>
+    </body>
+      
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</html>
